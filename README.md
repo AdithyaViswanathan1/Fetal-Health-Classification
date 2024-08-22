@@ -1,6 +1,8 @@
 # Fetal-Health-Classification
 
-Dataset link: https://www.kaggle.com/datasets/andrewmvd/fetal-health-classification
+## Dataset
+
+This dataset is from Kaggle and can be found [here](https://www.kaggle.com/datasets/andrewmvd/fetal-health-classification)
 
 Column Information:
 - baseline value: Baseline Fetal Heart Rate (FHR)
@@ -25,3 +27,13 @@ Column Information:
 - histogram_variance: Hist variance
 - histogram_tendency: Histogram trend
 - fetal_health: | 1 - Normal | 2 - Suspect | 3 - Pathological |
+
+## Objectives
+
+## Main Insights
+
+## Model Selection
+
+## Business Metrics
+
+## Try it out!
