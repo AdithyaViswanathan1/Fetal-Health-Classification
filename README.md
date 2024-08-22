@@ -32,6 +32,15 @@ Column Information:
 
 ## Objectives
 
+The main objective of this project is:
+> Develop a system to detect abnormal fetal health in order to reduce child-under-5 mortality, especially in low-resource countries.
+
+To achieve the main objective, here are sub-objectives:
+1. Perform extensive exploratory data analysis of tabular data.
+2. Develop supervised machine learning approach to classify fetal health into 3 states.
+3. Determine threshold to achieve best results in a medical setting.
+4. Deploy model (if time permits)
+
 ## Main Insights
 
 ## Model Selection
