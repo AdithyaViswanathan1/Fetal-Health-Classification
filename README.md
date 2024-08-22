@@ -1,6 +1,6 @@
 # Fetal-Health-Classification
 
-![Healthcare for the world image]()
+![Healthcare for the world image](https://github.com/AdithyaViswanathan1/Fetal-Health-Classification/tree/main/images/title_image.jpg)
 
 ## Dataset
 
