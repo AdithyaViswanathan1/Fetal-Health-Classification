@@ -37,9 +37,10 @@ The main objective of this project is:
 
 To achieve the main objective, here are sub-objectives:
 1. Perform extensive exploratory data analysis of tabular data.
-2. Develop supervised machine learning approach to classify fetal health into 3 states.
-3. Determine threshold to achieve best results in a medical setting.
-4. Deploy model (if time permits)
+2. Perform feature selection to extract only the most important predictors.
+3. Develop supervised machine learning approach to classify fetal health into 3 states.
+4. Determine threshold to achieve best results in a medical setting.
+5. Deploy model (if time permits)
 
 ## Main Insights
 
