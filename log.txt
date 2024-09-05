@@ -1,0 +1,100 @@
+Misclassification Expansion:
+
+Feature names: ['baseline value', 'accelerations', 'abnormal_short_term_variability', 'mean_value_of_short_term_variability', 'percentage_of_time_with_abnormal_long_term_variability', 'histogram_width', 'histogram_median', 'histogram_variance']
+
+Pred: 2.0 | True: 1.0
+% Difference from true feature means: [18.2, 100.0, 24.81, 58.06, 18.94, 63.22, 16.28, 88.56] Avg: 4.9e+01
+% Difference from pred feature means: [10.85, 6.88, 20.96, 2.72, 456.53, 30.19, 10.06, 29.83]  Avg: 7.1e+01
+
+Pred: 1.0 | True: 2.0
+% Difference from true feature means: [6.13, 100.0, 30.54, 25.2, 3.34, 2.36, 2.77, 44.55] Avg: 2.7e+01
+% Difference from pred feature means: [0.72, 1453.93, 0.86, 98.69, 85.96, 51.67, 3.09, 186.87]  Avg: 2.4e+02
+
+Pred: 2.0 | True: 1.0
+% Difference from true feature means: [18.2, 100.0, 24.81, 44.08, 40.53, 23.98, 16.28, 82.84] Avg: 4.4e+01
+% Difference from pred feature means: [10.85, 6.88, 20.96, 11.25, 516.0, 57.0, 10.06, 24.11]  Avg: 8.2e+01
+
+Pred: 2.0 | True: 3.0
+% Difference from true feature means: [1.76, 100.0, 22.41, 87.31, 79.46, 78.3, 13.75, 98.03] Avg: 6e+01
+% Difference from pred feature means: [5.84, 70.04, 26.49, 27.86, 52.39, 41.05, 9.26, 12.25]  Avg: 3.1e+01
+
+Pred: 1.0 | True: 2.0
+% Difference from true feature means: [2.6, 100.0, 7.92, 119.1, 65.55, 168.51, 6.17, 939.71] Avg: 1.8e+02
+% Difference from pred feature means: [4.25, 1453.93, 23.48, 4.79, 17.07, 119.2, 0.31, 797.39]  Avg: 3e+02
+
+Pred: 1.0 | True: 2.0
+% Difference from true feature means: [0.93, 100.0, 5.01, 21.75, 100.0, 53.21, 1.41, 86.14] Avg: 4.6e+01
+% Difference from pred feature means: [7.78, 1453.93, 36.4, 145.64, 17.38, 102.52, 4.45, 228.46]  Avg: 2.5e+02
+
+Pred: 2.0 | True: 1.0
+% Difference from true feature means: [11.38, 100.0, 48.35, 72.04, 137.87, 8.99, 7.61, 94.28] Avg: 6e+01
+% Difference from pred feature means: [4.03, 6.88, 2.59, 16.7, 337.59, 42.02, 1.39, 35.55]  Avg: 5.6e+01
+
+Pred: 2.0 | True: 1.0
+% Difference from true feature means: [6.08, 0.2, 88.39, 86.02, 613.62, 75.48, 7.61, 94.28] Avg: 1.2e+02
+% Difference from pred feature means: [1.28, 93.32, 42.62, 30.68, 138.15, 42.45, 1.39, 35.55]  Avg: 4.8e+01
+
+Pred: 2.0 | True: 1.0
+% Difference from true feature means: [3.04, 100.0, 83.68, 72.04, 613.62, 50.95, 0.39, 94.28] Avg: 1.3e+02
+% Difference from pred feature means: [4.31, 6.88, 37.91, 16.7, 138.15, 17.93, 5.83, 35.55]  Avg: 3.3e+01
+
+Pred: 1.0 | True: 2.0
+% Difference from true feature means: [2.6, 100.0, 6.3, 72.15, 48.33, 168.51, 4.13, 551.55] Avg: 1.2e+02
+% Difference from pred feature means: [4.25, 1453.93, 25.09, 51.74, 34.29, 119.2, 1.73, 409.23]  Avg: 2.6e+02
+
+Pred: 3.0 | True: 1.0
+% Difference from true feature means: [3.77, 100.0, 46.0, 65.05, 1347.06, 83.65, 9.72, 100.0] Avg: 2.2e+02
+% Difference from pred feature means: [3.55, 9.82, 5.98, 75.18, 994.18, 90.39, 3.93, 290.24]  Avg: 1.8e+02
+
+Pred: 1.0 | True: 2.0
+% Difference from true feature means: [0.48, 1720.99, 14.38, 56.5, 3.55, 150.21, 4.71, 38.63] Avg: 2.5e+02
+% Difference from pred feature means: [6.36, 367.06, 17.02, 67.39, 79.07, 100.9, 10.57, 103.69]  Avg: 9.4e+01
+
+Pred: 2.0 | True: 3.0
+% Difference from true feature means: [6.6, 100.0, 8.46, 80.96, 136.36, 60.43, 2.88, 98.03] Avg: 6.2e+01
+% Difference from pred feature means: [14.19, 70.04, 12.55, 21.51, 109.29, 23.18, 20.13, 12.25]  Avg: 3.5e+01
+
+Pred: 2.0 | True: 1.0
+% Difference from true feature means: [9.11, 74.95, 5.97, 44.08, 60.35, 59.13, 15.56, 71.4] Avg: 4.3e+01
+% Difference from pred feature means: [1.75, 18.17, 39.8, 11.25, 535.82, 26.1, 9.34, 12.66]  Avg: 8.2e+01
+
+Pred: 1.0 | True: 2.0
+% Difference from true feature means: [5.16, 264.2, 41.84, 119.1, 65.55, 146.14, 10.83, 52.49] Avg: 8.8e+01
+% Difference from pred feature means: [12.01, 1089.73, 10.45, 4.79, 17.07, 96.83, 16.69, 89.83]  Avg: 1.7e+02
+
+Pred: 1.0 | True: 3.0
+% Difference from true feature means: [2.8, 100.0, 23.95, 68.27, 100.0, 79.58, 4.55, 98.03] Avg: 6e+01
+% Difference from pred feature means: [3.02, 1018.29, 58.16, 59.07, 22.08, 73.26, 11.26, 32.48]  Avg: 1.6e+02
+
+Pred: 2.0 | True: 1.0
+% Difference from true feature means: [13.65, 100.0, 10.68, 23.11, 197.34, 85.29, 13.39, 54.23] Avg: 6.2e+01
+% Difference from pred feature means: [6.3, 6.88, 35.09, 32.22, 278.12, 118.31, 7.17, 4.5]  Avg: 6.1e+01
+
+Pred: 1.0 | True: 2.0
+% Difference from true feature means: [0.48, 264.2, 9.53, 21.75, 41.44, 3.74, 3.35, 2.96] Avg: 4.3e+01
+% Difference from pred feature means: [6.36, 1089.73, 21.86, 145.64, 41.18, 45.57, 9.21, 145.28]  Avg: 1.9e+02
+
+Pred: 1.0 | True: 2.0
+% Difference from true feature means: [5.16, 628.4, 40.23, 72.15, 65.55, 44.43, 10.83, 2.96] Avg: 1.1e+02
+% Difference from pred feature means: [12.01, 725.53, 8.83, 51.74, 17.07, 4.88, 16.69, 145.28]  Avg: 1.2e+02
+
+Pred: 1.0 | True: 2.0
+% Difference from true feature means: [0.48, 264.2, 4.69, 21.75, 30.9, 22.7, 4.71, 10.9] Avg: 4.5e+01
+% Difference from pred feature means: [6.36, 1089.73, 26.71, 145.64, 113.52, 72.01, 10.57, 131.42]  Avg: 2e+02
+
+Pred: 1.0 | True: 2.0
+% Difference from true feature means: [4.72, 628.4, 12.76, 56.5, 65.55, 168.51, 0.73, 66.35] Avg: 1.3e+02
+% Difference from pred feature means: [2.13, 725.53, 18.63, 67.39, 17.07, 119.2, 5.13, 75.96]  Avg: 1.3e+02
+
+Pred: 1.0 | True: 2.0
+% Difference from true feature means: [1.89, 628.4, 17.61, 244.3, 100.0, 201.06, 1.41, 662.45] Avg: 2.3e+02
+% Difference from pred feature means: [4.95, 725.53, 13.79, 120.4, 17.38, 151.75, 4.45, 520.13]  Avg: 1.9e+02
+
+Pred: 1.0 | True: 2.0
+% Difference from true feature means: [4.46, 628.4, 28.92, 40.85, 48.33, 22.05, 7.43, 86.14] Avg: 1.1e+02
+% Difference from pred feature means: [11.31, 725.53, 2.48, 83.04, 34.29, 27.26, 13.29, 228.46]  Avg: 1.4e+02
+
+Pred: 2.0 | True: 1.0
+% Difference from true feature means: [4.56, 74.95, 3.61, 30.1, 296.45, 34.88, 14.83, 54.23] Avg: 6.4e+01
+% Difference from pred feature means: [2.79, 18.17, 42.16, 25.23, 179.01, 67.9, 8.62, 4.5]  Avg: 4.4e+01
+
