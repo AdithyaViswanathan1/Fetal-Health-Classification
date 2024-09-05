@@ -42,7 +42,7 @@ To achieve the main objective, here are sub-objectives:
 4. Perform analysis on best-performing model
 5. Deploy model (if time permits)
 
-## Main Insights (EDA and Feature Selection)
+## EDA and Feature Selection Insights
 - Data is heavily skewed towards Normal (1.0) fetal health target.
 - Removing outliers will likely lead to loss of important examples in this dataset.
 - Univariate analysis lends some insight into the features' relation to the target, but not enough to solely determine the target.
