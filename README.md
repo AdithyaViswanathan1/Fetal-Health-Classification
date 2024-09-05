@@ -39,7 +39,7 @@ To achieve the main objective, here are sub-objectives:
 1. Perform extensive exploratory data analysis of tabular data.
 2. Perform feature selection to extract only the most important predictors.
 3. Develop supervised machine learning approach to classify fetal health into 3 states.
-4. Determine threshold to achieve best results in a medical setting.
+4. Perform analysis on best-performing model
 5. Deploy model (if time permits)
 
 ## Main Insights (EDA and Feature Selection)
@@ -65,5 +65,18 @@ To achieve the main objective, here are sub-objectives:
 - I decided to go with GridSearchCV to save time in finding the best hyper-parameters. This way, I can try multiple combinations and see which produces the best results. Also, I can choose which hyper-parameters to try, which will prevent underfitting and overfitting.
 - The next model I utilized was Decision Tree. This model performed on par with KNN in in terms of the metric scores. Decision tree, however, is more interpretable than KNN.
 - Next I used Random Forest Classifier. This model performed better than single decision tree model due to the fact that random forest builts multiple trees on different subset of features and data, so it learns different patterns when splitting the data. Also, it produces better results since it aggregates the predictions of multiple trees, so it takes the best of all trees it makes.
+
+## Prediction Analysis
+For each incorrect prediction, how much did its feature values differ from the average given its label? For example, if a fetus was predicted healthy, but was in reality suspect or pathological,
+- What were its feature values?
+- What is the average value for the features of a healthy fetus?
+- What is the difference between these values with respect to a given feature?
+
+The output of this can be found in `log.txt`
+
+- Difference between value and mean value are very high for few features, namely `accelerations`, `percentage_of_time_with_abnormal_long_term_variability`, and `histogram_variance`.
+- Percent difference for `accelerations` is noticeably 100% in a lot of cases. This is for a simple reason. The value for the given instance is 0 and the average value for that feature + label is a very small number. So, when calculating percent difference, it becomes _(0 - 0.001) / 0.001 * 100 = 100%_ 
+
+_Further analysis pending..._
 
 ## Try it out!
