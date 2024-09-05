@@ -52,8 +52,18 @@ To achieve the main objective, here are sub-objectives:
     - Highly correlated with each other (> 0.9)
     - Information gain < 0.1
 
-## Model Selection
-
 ## Business Metrics
+- When deciding the scoring by which GridSearch would find the optimum model, I decided to go with **recall** (true positive rate). This is important in a medical setting because it is very important to never miss a patient with an unhealthy fetus (False Negative). This could endanger the life of the fetus and the mother.
+- **Precision** is another metric which was used when evaluating models. It gives the number of False Positive predictions, which is when the model predicts a fetus is unhealthy, while in reality the fetus was actually healthy. This is definitely dangerous, but not to the extent as a False Negtive. The consequence of a false positive would be an unnecessary intervention, extra tests, and added stress to the family.
+- **F-1 score** provides a harmonic mean of precision and recall, so it provides another metric to balance false positives and false negatives.
+- **Confusion matrix** visually showcases the number of predictions correct and incorrect in addition to the predicted value. This gives a big picture view of TN, TP, FN and FP at one glance. 
+- **AUC-ROC** tested my model at different classification thresholds using One vs Rest evaluation (ex. Healthy as + and Suspect/Pathological as -). This showed the balance of precision and recall and what impact it had on their values. Having a high AUC-ROC will demonstrate the model's ability to distinguish between all combinations of the classes in One vs Rest evaluation style.
+- **Accuracy** has its place as a metric. In this project, it is not the best indicator of performance due to the heavy class imbalance. In other words, if the model predicted every fetus as healthy, then the model's accuracy would be 78%. Therefore, using only accuracy would be misleading to those trusting the efficacy of the project. Therefore, it is a supplementary metric and not an integral one.
+
+## Model Selection
+- KNN is a good benchmark model due to its simplicity and effectiveness.
+- I decided to go with GridSearchCV to save time in finding the best hyper-parameters. This way, I can try multiple combinations and see which produces the best results. Also, I can choose which hyper-parameters to try, which will prevent underfitting and overfitting.
+- The next model I utilized was Decision Tree. This model performed on par with KNN in in terms of the metric scores. Decision tree, however, is more interpretable than KNN.
+- Next I used Random Forest Classifier. This model performed better than single decision tree model due to the fact that random forest builts multiple trees on different subset of features and data, so it learns different patterns when splitting the data. Also, it produces better results since it aggregates the predictions of multiple trees, so it takes the best of all trees it makes.
 
 ## Try it out!
