@@ -97,7 +97,7 @@ For each incorrect prediction, how much did its feature values differ from the a
 
 The output of this can be found in `log.txt`
 
-- 2.0's are getting misclassified more than other labels. This is surprising considering 3.0's are the rarest to be found in the dataset, training and testing. So I would expect 3.0's to be misclassified more.
+- 2.0's are getting misclassified more than other labels. 2.0's have more than 20% error rate, while 1.0 and 3.0 have 3% and 8% respectively. This is surprising considering 3.0's are the rarest to be found in the dataset, training and testing. So I would expect 3.0's to be misclassified more.
     - One possible explanation for this is the inherent similarity of Suspect fetuses to Healthy and Pathologocal fetuses. Since Suspect diagnosis shows that the fetus is only showing few signs of abnormality would make some of its features suggestive of a healthy fetus and other features suggestive of a pathological fetus.
     - There are 2 ways to deal with this in future project iterations:
         1. Transform the problem into a binary classification problem (Healthy = - | Suspect,Pathological = +)
@@ -107,4 +107,11 @@ The output of this can be found in `log.txt`
 
 _Further analysis pending..._
 
-## Try it out!
+## Future Goals
+
+1. More machine learning models (CNN, XGBoost, etc) would easily upon up possibilities for better prediction.
+2. Deploy model using GUI or web application and allow data to be uploaded and classified in real-time.
+3. Using model interpretability techinques such as SHAPE and LIME to better understand feature influence and prediction.
+4. Understanding research on similar datasets to get more domain knowledge.
+5. Expanding the dataset to get more variety, mimicking medical data in the real world.
+
