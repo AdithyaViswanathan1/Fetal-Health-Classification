@@ -97,9 +97,13 @@ For each incorrect prediction, how much did its feature values differ from the a
 
 The output of this can be found in `log.txt`
 
+- 2.0's are getting misclassified more than other labels. This is surprising considering 3.0's are the rarest to be found in the dataset, training and testing. So I would expect 3.0's to be misclassified more.
+    - One possible explanation for this is the inherent similarity of Suspect fetuses to Healthy and Pathologocal fetuses. Since Suspect diagnosis shows that the fetus is only showing few signs of abnormality would make some of its features suggestive of a healthy fetus and other features suggestive of a pathological fetus.
+    - There are 2 ways to deal with this in future project iterations:
+        1. Transform the problem into a binary classification problem (Healthy = - | Suspect,Pathological = +)
+        2. Find better ways to distinguish Suspect from Healthy and Suspect from Pathological
 - Difference between value and mean value are very high for few features, namely `accelerations`, `percentage_of_time_with_abnormal_long_term_variability`, and `histogram_variance`.
 - Percent difference for `accelerations` is noticeably 100% in a lot of cases. This is for a simple reason. The value for the given instance is 0 and the average value for that feature + label is a very small number. So, when calculating percent difference, it becomes _(0 - 0.001) / 0.001 * 100 = 100%_
-- 2.0's are getting misclassified more than other labels. This is surprising considering 3.0's are the rarest to be found in the dataset, training and testing. So I would expect 3.0's to be misclassified more.
 
 _Further analysis pending..._
 
