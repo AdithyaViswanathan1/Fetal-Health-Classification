@@ -109,9 +109,10 @@ _Further analysis pending..._
 
 ## Future Goals
 
-1. More machine learning models (CNN, XGBoost, etc) would easily upon up possibilities for better prediction.
-2. Deploy model using GUI or web application and allow data to be uploaded and classified in real-time.
-3. Using model interpretability techinques such as SHAPE and LIME to better understand feature influence and prediction.
-4. Understanding research on similar datasets to get more domain knowledge.
-5. Expanding the dataset to get more variety, mimicking medical data in the real world.
+1. Apply data transformations like PCA, scaling, feature engineering.
+2. More machine learning models (CNN, XGBoost, etc) would easily upon up possibilities for better prediction.
+3. Deploy model using GUI or web application and allow data to be uploaded and classified in real-time.
+4. Using model interpretability techinques such as SHAPE and LIME to better understand feature influence and prediction.
+5. Understanding research on similar datasets to get more domain knowledge.
+6. Expanding the dataset to get more variety, mimicking medical data in the real world.
 
