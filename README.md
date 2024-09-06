@@ -53,6 +53,7 @@ To achieve the main objective, here are sub-objectives:
 - Univariate analysis lends some insight into the features' relation to the target, but not enough to solely determine the target.
 - Higher percentage of time with abnormal long term variability tends to cause pathological fetal health
 - Higher amount of accelerations leads to fewer instances of suspect and pathological fetuses
+- Plotting features percentage_of_time_with_abnormal_long_term_variability vs abnormal_short_term_variability shows a positive correlation with unhealthy fetuses. As the values for both of these features increases, there are clusters that show fetal health going from 1.0 to 2.0 to 3.0. 
 - Features were deemed poor predictors for 2 reasons:
     - Highly correlated with each other (> 0.9)
     - Information gain < 0.1
