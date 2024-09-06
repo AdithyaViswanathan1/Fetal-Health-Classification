@@ -56,6 +56,7 @@ To achieve the main objective, here are sub-objectives:
 - Features were deemed poor predictors for 2 reasons:
     - Highly correlated with each other (> 0.9)
     - Information gain < 0.1
+- In the end, I narrowed down from 21 features to 9 features.
 
 ## Business Metrics
 - When deciding the scoring by which GridSearch would find the optimum model, I decided to go with **recall** (true positive rate). This is important in a medical setting because it is very important to never miss a patient with an unhealthy fetus (False Negative). This could endanger the life of the fetus and the mother.
