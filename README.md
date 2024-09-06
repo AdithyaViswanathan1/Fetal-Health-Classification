@@ -98,7 +98,8 @@ For each incorrect prediction, how much did its feature values differ from the a
 The output of this can be found in `log.txt`
 
 - Difference between value and mean value are very high for few features, namely `accelerations`, `percentage_of_time_with_abnormal_long_term_variability`, and `histogram_variance`.
-- Percent difference for `accelerations` is noticeably 100% in a lot of cases. This is for a simple reason. The value for the given instance is 0 and the average value for that feature + label is a very small number. So, when calculating percent difference, it becomes _(0 - 0.001) / 0.001 * 100 = 100%_ 
+- Percent difference for `accelerations` is noticeably 100% in a lot of cases. This is for a simple reason. The value for the given instance is 0 and the average value for that feature + label is a very small number. So, when calculating percent difference, it becomes _(0 - 0.001) / 0.001 * 100 = 100%_
+- 2.0's are getting misclassified more than other labels. This is surprising considering 3.0's are the rarest to be found in the dataset, training and testing. So I would expect 3.0's to be misclassified more.
 
 _Further analysis pending..._
 
