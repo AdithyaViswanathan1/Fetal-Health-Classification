@@ -2,6 +2,11 @@
 
 ![Healthcare for the world image](/images/title_image.jpg)
 
+## Background
+Source: https://www.dremeilkamel.com.au/patient-resources/obstetrics/cardiotocography/
+
+Cardiotocography (CTG) is a technical means of recording (-graphy) the fetal heartbeat (cardio-) and the uterine contractions (-toco-) during pregnancy, typically in the third trimester. The machine used to perform the monitoring is called a cardiotocograph, more commonly known as an electronic fetal monitor. CTG can be used to identify signs of fetal distress.
+
 ## Dataset
 
 This dataset is from Kaggle and can be found [here](https://www.kaggle.com/datasets/andrewmvd/fetal-health-classification).
