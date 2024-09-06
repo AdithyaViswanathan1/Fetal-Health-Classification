@@ -38,7 +38,7 @@ The main objective of this project is:
 To achieve the main objective, here are sub-objectives:
 1. Perform extensive exploratory data analysis of tabular data.
 2. Perform feature selection to extract only the most important predictors.
-3. Develop supervised machine learning approach to classify fetal health into 3 states.
+3. Develop supervised machine learning approach to classify fetal health into 3 states (with focus on interpretability)
 4. Perform analysis on best-performing model
 5. Deploy model (if time permits)
 
@@ -64,7 +64,30 @@ To achieve the main objective, here are sub-objectives:
 - KNN is a good benchmark model due to its simplicity and effectiveness.
 - I decided to go with GridSearchCV to save time in finding the best hyper-parameters. This way, I can try multiple combinations and see which produces the best results. Also, I can choose which hyper-parameters to try, which will prevent underfitting and overfitting.
 - The next model I utilized was Decision Tree. This model performed on par with KNN in in terms of the metric scores. Decision tree, however, is more interpretable than KNN.
-- Next I used Random Forest Classifier. This model performed better than single decision tree model due to the fact that random forest builts multiple trees on different subset of features and data, so it learns different patterns when splitting the data. Also, it produces better results since it aggregates the predictions of multiple trees, so it takes the best of all trees it makes.
+- Next I used Random Forest Classifier. In short, this ensemble method created multiple independent trees and averages the prediction. This model performed better than single decision tree model due to the fact that random forest builts multiple trees on different subset of features and data, so it learns different patterns when splitting the data. Also, it produces better results since it aggregates the predictions of multiple trees, so it takes the best of all trees it makes.
+
+Random Forest Results:
+```
+Accuracy: 0.9437
+Classification Report:
+              precision    recall  f1-score   support
+
+         1.0       0.96      0.97      0.97       334
+         2.0       0.82      0.79      0.80        57
+         3.0       0.97      0.91      0.94        35
+
+    accuracy                           0.94       426
+   macro avg       0.92      0.89      0.90       426
+weighted avg       0.94      0.94      0.94       426
+
+Classification Report:
+[[325   8   1]
+ [ 12  45   0]
+ [  1   2  32]]
+ROC-AUC: 0.9852862518931662
+```
+
+- After prediction analysis (yet to come), I implemented Adaboost just to see how much I could improve the predictions. Unlike random forest, this emsemble method learns sequentially using multiple weak learners and tries to solve the hard/missed cases. The base model was the decision tree classifier. The results were a bit better, but not significantly. All metrics improved except for ROC-AUC.
 
 ## Prediction Analysis
 For each incorrect prediction, how much did its feature values differ from the average given its label? For example, if a fetus was predicted healthy, but was in reality suspect or pathological,
